@@ -1,0 +1,298 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*Common Styles*/
+body {
+    font-family: "BPG Glaho", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+            -o-transition: background-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                background-color: #4CAF50;
+                color: black; /* Change color on hover */
+            }
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*About*/
+#contact-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 20px; /* Adjust spacing between sections */
+}
+
+#contact {
+    width: 500px;
+}
+
+#info {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: auto; /* Move section to the right */
+    max-width: 50%; /* Maximum width of the section */
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    form input[type="submit"] {
+        margin-top: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    max-width: 100%; /* Ensure the map is responsive */
+}
+
+/*News*/
+#timeline {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing between timeline items */
+}
+
+.timeline-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.timeline-content {
+    background-color: gainsboro;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    .timeline-content h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .timeline-content p {
+        margin-bottom: 0;
+        color: #666;
+    }
+
+
+#founders, #mission, #values, #quality {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    #values ul {
+        padding-left: 20px;
+    }
+
+    #values li {
+        margin-bottom: 5px;
+    }
+
+/*Services*/
+#services-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    #services-list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #services-list li {
+        margin-bottom: 10px;
+    }
+
+    #services-list a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        #services-list a:hover {
+            text-decoration: underline;
+            color: #4CAF50;
+        }
+
+/*Index*/
+
+.welcome-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#explore-title {
+    color: black;
+    opacity: 0.5;
+}
+
+#explore-background {
+    height: 400px; /* Adjust height as needed */
+    background-image: url('../img/chessboard.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1; /* Ensure big picture is behind other content */
+}
+
+#explore-foreground {
+    height: 360px;
+    position: relative;
+    z-index: 2; /* Ensure explore section is above big picture */
+    background-color: rgba(255, 255, 255, 0.4); /* Optional: Add a semi-transparent background */
+    padding: 20px;
+}
+
+.explore-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.explore-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 200px;
+    flex: 1 0 200px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: background-color 0.8s ease;
+    -o-transition: background-color 0.8s ease;
+    transition: background-color 0.8s ease;
+}
+
+    .explore-item:hover {
+        background-color: #4CAF50; /* Change background on hover */
+    }
+
+.explore-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.explore-text {
+    font-weight: bold;
+}
+
+
+
+.big-picture-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+    .big-picture-container img {
+        width: 100%;
+        vertical-align: middle;
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    }
